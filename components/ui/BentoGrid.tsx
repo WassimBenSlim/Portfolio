@@ -6,10 +6,7 @@ import { IoCopyOutline } from "react-icons/io5";
 
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
-import { Globe } from "./Globe";
 import { GlobeDemo } from "./GridGlobe";
-import { SiTypescript } from "react-icons/si";
-import { DiJavascript } from "react-icons/di";
 import anomationData from '@/data/confetti.json'
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
@@ -57,7 +54,7 @@ export const BentoGridItem = ({
 }) => {
   const [copied, setCopied] = useState(false);
   const handleCopy = () => {
-    navigator.clipboard.writeText("diyararashid@gmail.com");
+    navigator.clipboard.writeText("wassimbenslim77@gmail.com");
     setCopied(true);
   }
   return (
@@ -116,10 +113,10 @@ export const BentoGridItem = ({
           </div>
           {id === 2 && <GlobeDemo />}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-2 lg:-right-1">
             
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {['JavaScript','TypeScript','React.js'].map((item, i) => (
+                {['Angular','React.js','Flutter'].map((item, i) => (
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
@@ -132,7 +129,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {['Vite.js','Java','Next.js'].map((item, i) => (
+                {['Python','Java','C/C++'].map((item, i) => (
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
